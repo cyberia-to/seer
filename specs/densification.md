@@ -91,7 +91,7 @@ every epoch:
              excluding same-cluster pairs; rank by Δλ₂ / c(n)
   mesh:      candidates = bypasses around articulation points;
              rank by component size × resilience gain / c(n)
-  semantic:  candidates = hubs → undervalued particles;
+  semantic:  candidates = hubs → undervalued files;
              rank by ΔJ / c(n)
 
   for each candidate: attach predicted settlement (rewards §6 marginal),

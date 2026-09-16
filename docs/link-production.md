@@ -17,7 +17,7 @@ the protocol stack validates, orders, and propagates links: [[zheng]] proves a l
 a [[cyberlink]] is $(p, q, \tau, a, v)$ — source and target [[particles]], token, amount, [[valence]]; the signing [[neuron]] and block belong to the containing [[signal]]. producing one means a neuron decides $p$ is relevant to $q$ and spends [[focus]] to say so. that decomposes:
 
 ```
-1. discovery     what particles exist, or should?
+1. discovery     what files exist, or should?
 2. evaluation    which connections would improve the graph?
 3. decision      is the improvement worth the cost?
 4. commitment    sign the cyberlink, spend, prove
@@ -69,7 +69,7 @@ seer mines the left end — pure and informed connection, where every candidate 
 
 ```
 0  content        humans, agents, imports        → raw content
-1  particles      hemera hash, bbg + DAS         → addressable particles
+1  files          hemera hash, bbg + DAS         → files, each named by its particle
 2  discovery      densification · personalized   → candidate links
                   focus · learned proposal ·
                   agent reasoning
