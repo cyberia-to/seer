@@ -12,7 +12,14 @@ seer is a miner. it mines the mint — on any chain that pays for [[focus]].
 
 there is no single chain. every token has a home book of its own ([[cyber/research/oikos|oikos]]: one token, one chain), and every [[neuron]] can root one, so a neuron with a token has a chain. [[cyber]]'s [[cyber/$CYB|$CYB]] book is the first and the reference, not the only one. wherever a book settles in proven focus shift under the [[tru]] measure, seer can mine it; the chain is whichever one the neuron is signing into.
 
-on $CYB a [[neuron]] is paid four ways ([[rewards]]): the mint — Shapley's share of the proven focus shift $\Delta\phi^+$ its links caused; the subsidy — proof-of-work for settling other neurons' shares; query fees; and stake. seer is the agent that earns the first. it reads the graph and the measure, finds the [[cyberlinks]] that would shift focus the most per unit of will, and hands them to the neuron to sign. the settlement miner grinds nonces for the subsidy; seer grinds the link space for the mint. two miners, two streams. other books define their own streams; seer mines whichever pays for focus.
+on $CYB a [[neuron]] is paid four ways ([[rewards]]):
+
+- the mint — Shapley's share of the proven focus shift $\Delta\phi^+$ its links caused
+- the subsidy — proof-of-work for settling other neurons' shares
+- query fees
+- stake
+
+seer is the agent that earns the first. it reads the graph and the measure, finds the [[cyberlinks]] that would shift focus the most per unit of will, and hands them to the neuron to sign. the settlement miner grinds nonces for the subsidy; seer grinds the link space for the mint. two miners, two streams. other books define their own streams; seer mines whichever pays for focus.
 
 its hash function is $\phi^*$. its hashrate is proven $\Delta\phi^+$ per epoch. its difficulty is the surprise gate $\rho$ times the exponential cost of links. its pool is the graph itself — evidence, not documentation. its duty cycle is the will it is allowed to spend. the two doctrines of [[warriors]] — make the machine earn, and report truthfully — apply without change; the machine here is a neuron's will instead of a chip.
 
