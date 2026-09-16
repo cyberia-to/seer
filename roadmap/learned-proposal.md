@@ -3,7 +3,7 @@ tags: cyber, cyb, seer, roadmap
 crystal-type: process
 crystal-domain: cyber
 status: proposal
-alias: learned proposal, gflownet focus flow, gflownet proposal, learned link proposal
+alias: learned proposal, gflownet focus flow, gflownet proposal, learned link proposal, GFlowNet, gflownet
 ---
 # learned proposal
 
