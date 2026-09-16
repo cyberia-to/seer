@@ -8,46 +8,48 @@ alias: seer, cyber-seer, cyber/seer, link miner, mint miner, structure miner
 ---
 # seer
 
-seer is a miner. it mines the mint — on any chain that pays for [[focus]].
+a [[neuron]] holds a budget of will and a graph of [[particles]] it did not create. somewhere among the $O(N^2)$ pairs of particles that already exist is the [[cyberlink]] that would teach the graph the most — shift collective [[focus]] $\phi^*$ the furthest — for the will it costs. finding that pair is a search over public state, and [[tru]] prices every candidate exactly before a single token is spent: $\rho \cdot \Delta\phi^+$, surprise times proven impulse, net of cost ([[rewards]] §6). seer is the agent that runs the search and hands the winning candidates to the neuron to sign.
 
-there is no single chain. every token has a home book of its own ([[cyber/research/oikos|oikos]]: one token, one chain), and every [[neuron]] can root one, so a neuron with a token has a chain. [[cyber]]'s [[cyber/$CYB|$CYB]] book is the first and the reference, not the only one. wherever a book settles in proven focus shift under the [[tru]] measure, seer can mine it; the chain is whichever one the neuron is signing into.
+that is what a miner is: an agent that searches a space against a public, exactly-priced function and is paid for what it proves. seer's hash function is $\phi^*$; its hashrate is proven $\Delta\phi^+$ per epoch; its difficulty is the surprise gate $\rho$ times the exponential cost of links ([[universal law]]); its pool is the graph itself — evidence, not documentation; its duty cycle is the will it may spend. the two doctrines of [[warriors]] apply unchanged — make the machine earn, and report the true rate — the machine here is a neuron's will instead of a chip.
 
-on $CYB a [[neuron]] is paid four ways ([[rewards]]):
+seer mines the mint. on $CYB a neuron is paid four ways ([[rewards]]):
 
 - the mint — Shapley's share of the proven focus shift $\Delta\phi^+$ its links caused
 - the subsidy — proof-of-work for settling other neurons' shares
 - query fees
 - stake
 
-seer is the agent that earns the first. it reads the graph and the measure, finds the [[cyberlinks]] that would shift focus the most per unit of will, and hands them to the neuron to sign. the settlement miner grinds nonces for the subsidy; seer grinds the link space for the mint. two miners, two streams. other books define their own streams; seer mines whichever pays for focus.
+a different miner grinds nonces for the subsidy. seer grinds the pair space for the mint. two miners, two streams, same graph.
 
-its hash function is $\phi^*$. its hashrate is proven $\Delta\phi^+$ per epoch. its difficulty is the surprise gate $\rho$ times the exponential cost of links. its pool is the graph itself — evidence, not documentation. its duty cycle is the will it is allowed to spend. the two doctrines of [[warriors]] — make the machine earn, and report truthfully — apply without change; the machine here is a neuron's will instead of a chip.
+## why any chain
 
-## the one limitation
+the price seer mines against is not specific to $CYB. it is defined by [[tru]]'s measure alone — any book whose settlement pays for proven focus shift can be mined the same way. and there is no single such book: [[cyber/research/oikos|oikos]] gives every token its own home book, one token one chain, and any [[neuron]] with a token can root one. $CYB is the reference implementation, not the only chain. the chain seer mines is whichever one the neuron is signing into; other books define their own streams past the mint, and seer mines whichever of them pays for focus.
 
-seer never creates a particle. it optimizes the structure of the graph as it stands: which existing [[particles]] should be connected, with what conviction. creating a particle is a different task by nature — synthesis in an unbounded space, whose value is the entropy of new content and whose risks are hallucination, redundancy, and storage paid before worth is known. mining is search in a bounded space, $O(N^2)$ pairs, where the exact value of every candidate is computable from public state before a single token is spent ([[rewards]] §6). a miner needs no understanding of content to be perfect at this; seer is content-blind by construction. humans, models, and agents create; seer wires what they make into the graph. see [docs/link-production.md](docs/link-production.md) for the boundary between the two.
+## why it never creates a particle
 
-## when mining stops
+the price above only exists for pairs of particles that already exist. a new particle's value is the entropy of content nobody has written yet — it exists once the particle is made, not before, so nothing prices it in advance the way $\rho \cdot \Delta\phi^+$ prices an edge. that is not a policy choice, it is the boundary of what a search over public state can do: mining is exact because the space is bounded and every answer is priceable in advance; creation is synthesis in an unbounded space, and its risks — hallucination, redundancy, storage paid before worth is known — are exactly the risks of an unpriceable search. seer stays on the priceable side. humans, models, and agents create particles; seer wires what they make into the graph it did not write. see [docs/link-production.md](docs/link-production.md) for the full boundary.
 
-a graph that does not need optimization is one where nothing about its structure would surprise the crowd. that is not a slogan; it is the reward. the mint pays directed syntropy gated by surprise: a link the crowd already expects settles for nothing however large its $\Delta\phi^+$, and a link that adds no directed syntropy settles for nothing however surprising. so a candidate is worth mining iff its expected settlement exceeds the will it costs, and when no pair in a neuron's reach clears that bar, seer idles. the stop is built into the reward — no threshold to tune, decidable per neuron from public state and its own ego-net.
+## when it stops
 
-three consequences, and two open questions:
+the stop is the same price, run to its conclusion. a pair is worth mining iff $\rho \cdot \Delta\phi^+$ exceeds its cost, and a graph where no remaining pair clears that bar is one where nothing about its structure would surprise the crowd — mined out, for now, for that neuron. no threshold to tune: the reward decides, from public state and the neuron's own ego-net.
 
-- structural work stops first. bridges and bypasses raise $\lambda_2$ and spread focus; the mint pays for concentration. [densification](specs/densification.md)'s phases end in maintenance, and on bostrom they had already ended ($\lambda_2 \approx 0.13$). past that point only focus-redistributing links — hubs to undervalued particles — clear the bar.
-- mining never stops globally. every created particle arrives unwired, and wiring it in is existing→existing work. [[temporal decay]] removes links and reopens pairs. mining is the digestion of creation: the mined-out state is per region and per epoch, and it lasts until something new arrives.
-- copies are the floor. a region is mined out when every remaining link is predictable. this is why a learned policy trained on realized settlement learns to stop on its own.
+three things follow from that, and two things do not follow yet:
+
+- structural work runs out first. bridges and bypasses raise $\lambda_2$ and spread focus; the mint pays for concentration. [densification](specs/densification.md)'s phases end in maintenance, and bostrom's measured $\lambda_2 \approx 0.13$ means it had already ended there — only focus-redistributing links kept clearing the bar.
+- mining never stops globally. every new particle arrives unwired, and wiring it in is existing→existing work again; [[temporal decay]] removes links and reopens pairs. mining is the digestion of creation, mined-out only per region and per epoch.
+- a mined-out region is, by construction, one a learned policy trained on realized settlement will learn to leave alone on its own.
 
 open:
 
-1. the mint's stop is not the network's need. [[superadditivity]] measured that connectivity raises the collective's advantage $\sigma$ and lowers syntropy $J$; the mint pays in the $J$ direction, and the subsidy is stake-blind proof-of-work, not a fund for structure. a graph can be mined out by the mint's criterion while still under-connected for [[foculus]] finality. either focus-concentrating links are the ones that matter and the network is fine, or a structural term is missing from the reward. that is a question for [[rewards]], and seer reports both numbers — structural score and predicted settlement — so it can be answered from evidence.
-2. the loop has no proven fixed point. tru's contraction guarantees $\phi^*$ converges each epoch on a fixed graph; miners changing the graph in response to $\phi^*$ is a different dynamical system. whether it settles or oscillates is open ([docs/link-production.md](docs/link-production.md), question 4).
+1. the mint's stop is not proven to be the network's need. [[superadditivity]] measured that connectivity raises the collective's advantage $\sigma$ while it lowers syntropy $J$; the mint pays in the $J$ direction, and the subsidy is stake-blind proof-of-work, not a fund for structure. a graph can be mined out by the mint's own criterion while still under-connected for [[foculus]] finality. either concentrating links are what actually matters and the network is fine, or a structural term is missing from [[rewards]] — a question for that spec, and seer reports both numbers, structural score and predicted settlement, so the question can be settled from evidence rather than argued.
+2. the loop's fixed point is not proven. tru's contraction guarantees $\phi^*$ converges each epoch on a fixed graph; miners changing the graph in response to $\phi^*$, epoch over epoch, is a different dynamical system, and whether it settles or oscillates is open (see [docs/link-production.md](docs/link-production.md), question 4).
 
 ## invariants
 
-1. outside the contraction. seer never computes $\phi^*$ and never touches [[focusing]]. learning lives here, so tru stays bit-identical on every machine.
-2. the mint is the objective. seer ranks or samples by expected settlement under [[rewards]] net of cost. structural signals are priors that shape the search, never the quantity optimized.
-3. no new particles. seer proposes edges between particles that exist.
-4. honesty as a feature. every proposal carries a predicted settlement; every settled epoch scores the prediction against what tru measured. a policy that mispredicts loses the neuron's trust before it loses the neuron's stake.
+1. outside the contraction — seer never computes $\phi^*$ and never touches [[focusing]]. learning lives here so that tru stays bit-identical on every machine.
+2. the mint is the objective — seer ranks or samples by expected settlement net of cost. structural signals are priors that shape the search, never the quantity optimized.
+3. no new particles — seer proposes edges between particles that exist.
+4. honesty as a feature — every proposal carries a predicted settlement, and every settled epoch scores that prediction against what tru measured. a policy that mispredicts loses the neuron's trust before it loses the neuron's stake.
 
 ## methods
 
