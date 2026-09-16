@@ -7,7 +7,7 @@ alias: densification, cyber-seer densification, link densification, spectral den
 ---
 # densification
 
-cyber-seer: where to link when links cost more every time. the analytical method of [[seer]] — maximize spectral gap gained per unit of cost, pushing the graph through its phase transition before links become prohibitively expensive.
+cyber-seer: where to link when links cost more every time. the analytical mining method of [[seer]] — maximize spectral gap gained per unit of cost, pushing the graph through its phase transition before links become prohibitively expensive. it mines structure only: pairs of particles that exist, never a new particle.
 
 ## the cost
 
@@ -79,7 +79,7 @@ given a budget $B$ of links before cost becomes prohibitive, the split follows t
 
 [[bostrom]] was placed in the bridge phase on a sampled estimate $\lambda_2 \approx 0.0015$. the full-graph observation gave $\lambda_2 \approx 0.13$ ([[observing the spectral gap]], `tru/eval/spectral-gap-bostrom.md`), which by this table is maintenance: bostrom's structural work was already done, and its remaining value was semantic. the thresholds above are the original design's; they are untested against any second graph and are the first thing a run should calibrate.
 
-## the loop
+## the mining loop
 
 ```
 every epoch:
@@ -116,6 +116,6 @@ each epoch seer publishes, as a [[cyberlink]] into the graph it analyzes: curren
 
 ## what this method cannot see
 
-only structure. it does not read content, so it cannot tell a true link from a plausible one; that is the market's job ([[market inhibition]]) and the neuron's. the [learned proposal](../roadmap/learned-proposal.md) is the extension that samples beyond the spectral signal, with this method as its teacher.
+only structure. it does not read content, so it cannot tell a true link from a plausible one; that is the market's job ([[market inhibition]]) and the neuron's. and its phases end: past maintenance, pure structural links stop clearing the settlement bar, and only focus-redistributing links remain worth mining until creation or decay reopens a region ([README](../README.md), when mining stops). the [learned policy](../roadmap/learned-policy.md) samples beyond the spectral signal, with this method as its teacher.
 
 see [[observing the spectral gap]] for how $\lambda_2$ is read off the running iteration · [[foculus]] for what $\lambda_2$ means for finality · [[universal law]] for the cost curve

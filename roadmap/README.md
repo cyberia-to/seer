@@ -10,7 +10,7 @@ open proposals for [[seer]]. the current contracts live in [specs/](../specs/REA
 
 | proposal | status | target |
 |---|---|---|
-| [learned proposal](learned-proposal.md) | proposal | a GFlowNet that samples cyberlinks in proportion to expected settlement, with densification as its teacher |
+| [learned policy](learned-policy.md) | proposal | a GFlowNet mining policy that samples cyberlinks in proportion to expected settlement, with densification as its teacher |
 
 ## lifecycle
 

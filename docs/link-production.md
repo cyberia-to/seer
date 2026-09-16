@@ -24,14 +24,14 @@ a [[cyberlink]] is $(p, q, \tau, a, v)$ — source and target [[particles]], tok
 5. propagation   sync through the protocol
 ```
 
-4 and 5 are the protocol. 3 is economics — will, conviction, the exponential cost of [[universal law]]. 1 and 2 are intelligence, and they are seer's.
+4 and 5 are the protocol. 3 is economics — will, conviction, the exponential cost of [[universal law]]. 1 and 2 are intelligence. seer takes the half of them that is mining: connecting particles that exist. discovering or making particles that do not is creation, another component's job.
 
 ## what exists
 
 | tool | does | step | limit |
 |---|---|---|---|
-| [densification](../specs/densification.md) | analytical: Fiedler vector → bridge and bypass candidates | discovery + evaluation, existing→existing | structure only, no content |
-| [learned proposal](../roadmap/learned-proposal.md) | learned: sample links in proportion to expected settlement | discovery + evaluation, both modes | proposal, unbuilt |
+| [densification](../specs/densification.md) | mining, analytical: Fiedler vector → bridge and bypass candidates | discovery + evaluation, existing→existing | structure only, no content |
+| [learned policy](../roadmap/learned-policy.md) | mining, learned: sample links in proportion to expected settlement | discovery + evaluation, existing→existing | proposal, unbuilt |
 | human neurons | judgment: read, think, link | all | slow, does not scale |
 | LLM agents | synthesis: generate content, propose links | discovery + creation of new particles | hallucination, no stake in the outcome |
 | [[tru]] | the measure: $\phi^*$, $\Delta\phi^+$, settlement | evaluation, exact | measures; never proposes |
@@ -55,13 +55,13 @@ full creation        Cat → original research            new knowledge
 pure creation        new topic → new content            both new
 ```
 
-densification works at the left; agents across the middle; original researchers at the right.
+seer mines the left end — pure and informed connection, where every candidate can be priced exactly before commitment. agents work across the middle; original researchers at the right. the line between mining and creation is the line between a value that can be computed from public state and one that exists only after the particle is made.
 
 ## what is missing
 
 1. content discovery at scale — a neuron sees its neighbourhood; the graph has billions of particles. personalized focus from the neuron's own links as seeds is the natural recommender: high personalized $\phi^*$, not yet linked, is a candidate.
 2. novelty detection — particle identity is $H(\text{content})$, so paraphrases accumulate. focus economics punish copies after the fact ([[temporal decay]]); the storage was already paid. a pre-commitment similarity check is missing.
-3. quality before commitment — focus is irreversible. [[rewards]] §6 gives the neuron its exact standalone marginal $\Delta\phi^+_\nu$ for a candidate set, locality-bounded and provable; what is missing is a surrogate cheap enough to score thousands of candidates per step. that is the first open question of the [learned proposal](../roadmap/learned-proposal.md).
+3. quality before commitment — focus is irreversible. [[rewards]] §6 gives the neuron its exact standalone marginal $\Delta\phi^+_\nu$ for a candidate set, locality-bounded and provable; what is missing is a surrogate cheap enough to price thousands of candidates per step. that is the first open question of the [learned policy](../roadmap/learned-policy.md).
 4. cold start — an empty graph has no $\phi^*$ to improve. the sequence is finite: seed particles, free early links, densification on the seed graph, and once $\lambda_2$ clears its threshold the tri-kernel's $\phi^*$ becomes meaningful and economics take over.
 5. the agent-to-link interface — an agent needs to discover what the graph lacks, generate what fills it, score its own output, and sign. seer's [interface](../specs/interface.md) is the contract for the first three; the neuron's key ([[cyb]]) is the fourth. a proposal produced by a [[nox]] program carries a [[zheng]] trace, so the decision process itself is provable.
 
