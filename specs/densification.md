@@ -7,7 +7,7 @@ alias: densification, cyber-seer densification, link densification, spectral den
 ---
 # densification
 
-cyber-seer: where to link when links cost more every time. the analytical mining method of [[seer]] — maximize spectral gap gained per unit of cost, pushing the graph through its phase transition before links become prohibitively expensive. it mines structure only: pairs of particles that exist, never a new particle.
+cyber-seer: where to link when links cost more every time. the analytical mining method of [[seer]] — maximize spectral gap gained per unit of cost, pushing the graph through its phase transition before links become prohibitively expensive. it mines structure only: pairs of files that exist, never a new file.
 
 ## the cost
 
@@ -60,8 +60,8 @@ quantity fails; quality remains.
 
 1. read $\phi^*$
 2. find high-$\phi^*$ particles with low out-degree — hubs that point nowhere
-3. find low-$\phi^*$ particles with high intrinsic value — large content, diverse inbound neurons
-4. propose links from hubs to undervalued particles — this redistributes focus mass toward what deserves it
+3. find low-$\phi^*$ files with high intrinsic value — large content, diverse inbound neurons
+4. propose links from hubs to undervalued files — this redistributes focus mass toward what deserves it
 5. rank by syntropy gained per cost, $\Delta J / c(n)$
 
 target: focus reflects truth. metric: syntropy per link. this is the phase where the structural score and the settlement agree: concentrating focus is what the mint pays for ([interface](interface.md), the tension).

@@ -4,7 +4,7 @@ seer is a miner. it mines the mint of any chain that pays for focus — every to
 
 1. nothing in this repo computes φ* or touches tru's focusing iteration. learning lives outside the contraction.
 2. the objective is the neuron's expected settlement under rewards.md, net of cost. structural signals (Δλ₂, articulation points) are priors, never the reward.
-3. seer never creates a particle. it proposes edges between particles that exist. creation is another component's job.
+3. seer never creates a file. it proposes edges between files that exist. creation is another component's job.
 4. every proposal carries a predicted settlement, and every settled epoch scores it against tru's measurement. report truthfully — the warriors doctrine.
 
 ## layout

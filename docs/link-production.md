@@ -24,7 +24,7 @@ a [[cyberlink]] is $(p, q, \tau, a, v)$ — source and target [[particles]], tok
 5. propagation   sync through the protocol
 ```
 
-4 and 5 are the protocol. 3 is economics — will, conviction, the exponential cost of [[universal law]]. 1 and 2 are intelligence. seer takes the half of them that is mining: connecting particles that exist. discovering or making particles that do not is creation, another component's job.
+4 and 5 are the protocol. 3 is economics — will, conviction, the exponential cost of [[universal law]]. 1 and 2 are intelligence. seer takes the half of them that is mining: connecting files that exist. discovering or making files that do not is creation, another component's job.
 
 ## what exists
 
@@ -33,7 +33,7 @@ a [[cyberlink]] is $(p, q, \tau, a, v)$ — source and target [[particles]], tok
 | [densification](../specs/densification.md) | mining, analytical: Fiedler vector → bridge and bypass candidates | discovery + evaluation, existing→existing | structure only, no content |
 | [learned policy](../roadmap/learned-policy.md) | mining, learned: sample links in proportion to expected settlement | discovery + evaluation, existing→existing | proposal, unbuilt |
 | human neurons | judgment: read, think, link | all | slow, does not scale |
-| LLM agents | synthesis: generate content, propose links | discovery + creation of new particles | hallucination, no stake in the outcome |
+| LLM agents | synthesis: generate content, propose links | discovery + creation of new files | hallucination, no stake in the outcome |
 | [[tru]] | the measure: $\phi^*$, $\Delta\phi^+$, settlement | evaluation, exact | measures; never proposes |
 | [[temporal decay]] | pruning: low-energy links leave | negative evaluation, retroactive | removes; never proposes |
 
@@ -41,9 +41,9 @@ the gap: nothing yet connects content understanding to link decision at scale wi
 
 ## existing→existing and existing→new
 
-both particles known — the link asserts a relationship. information added: the edge, $O(1)$. this is search in an $O(N^2)$ space: densification navigates it analytically, a learned method by sampling. it is retrieval — recognizing a pattern in what is already known.
+both files known — the link asserts a relationship. information added: the edge, $O(1)$. this is search in an $O(N^2)$ space: densification navigates it analytically, a learned method by sampling. it is retrieval — recognizing a pattern in what is already known.
 
-target particle new — the link asserts a relationship to content that did not exist in the graph. information added: the content plus the edge. this is synthesis in an unbounded space. it is generation — writing, research, observation.
+target file new — the link asserts a relationship to content that did not exist in the graph. information added: the content plus the edge. this is synthesis in an unbounded space. it is generation — writing, research, observation.
 
 at the protocol level the two are one thing: both are cyberlinks, both cost, both carry proofs, [[bbg]] does not distinguish them. at the information level they differ — mutual information $I(p;q)$ against entropy $H(\text{new})$. at the economic level they differ — the second pays storage and carries the risk that the content is worthless or redundant. and they are a spectrum:
 
@@ -55,14 +55,14 @@ full creation        Cat → original research            new knowledge
 pure creation        new topic → new content            both new
 ```
 
-seer mines the left end — pure and informed connection, where every candidate can be priced exactly before commitment. agents work across the middle; original researchers at the right. the line between mining and creation is the line between a value that can be computed from public state and one that exists only after the particle is made.
+seer mines the left end — pure and informed connection, where every candidate can be priced exactly before commitment. agents work across the middle; original researchers at the right. the line between mining and creation is the line between a value that can be computed from public state and one that exists only after the file is made.
 
 ## what is missing
 
 1. content discovery at scale — a neuron sees its neighbourhood; the graph has billions of particles. personalized focus from the neuron's own links as seeds is the natural recommender: high personalized $\phi^*$, not yet linked, is a candidate.
 2. novelty detection — particle identity is $H(\text{content})$, so paraphrases accumulate. focus economics punish copies after the fact ([[temporal decay]]); the storage was already paid. a pre-commitment similarity check is missing.
 3. quality before commitment — focus is irreversible. [[rewards]] §6 gives the neuron its exact standalone marginal $\Delta\phi^+_\nu$ for a candidate set, locality-bounded and provable; what is missing is a surrogate cheap enough to price thousands of candidates per step. that is the first open question of the [learned policy](../roadmap/learned-policy.md).
-4. cold start — an empty graph has no $\phi^*$ to improve. the sequence is finite: seed particles, free early links, densification on the seed graph, and once $\lambda_2$ clears its threshold the tri-kernel's $\phi^*$ becomes meaningful and economics take over.
+4. cold start — an empty graph has no $\phi^*$ to improve. the sequence is finite: seed files, free early links, densification on the seed graph, and once $\lambda_2$ clears its threshold the tri-kernel's $\phi^*$ becomes meaningful and economics take over.
 5. the agent-to-link interface — an agent needs to discover what the graph lacks, generate what fills it, score its own output, and sign. seer's [interface](../specs/interface.md) is the contract for the first three; the neuron's key ([[cyb]]) is the fourth. a proposal produced by a [[nox]] program carries a [[zheng]] trace, so the decision process itself is provable.
 
 ## the production stack
@@ -91,7 +91,7 @@ existing→existing is intelligence: seeing what connects things that are alread
 ## open questions
 
 1. a surrogate for $\Delta\phi^+$ cheap enough for real-time evaluation of many candidates — personalized push-back on the ego-net may give $O(1/\varepsilon)$
-2. recovering storage from decayed particles, so low-quality creation is not permanently paid for
+2. recovering storage from decayed files, so low-quality creation is not permanently paid for
 3. the agent architecture that spans the spectrum — structure from densification, content from a model, sampling from a learned proposer, accountability from settlement — and whether one architecture covers it
 4. whether production has a fixed point: agents optimize $\Delta\phi^+$, $\phi^*$ moves in response. equilibrium or oscillation? see [[observing the spectral gap]] for the convergence side
 5. an information-theoretic ceiling on how complete the graph can get under finite collective focus ([[knowledge completeness]])

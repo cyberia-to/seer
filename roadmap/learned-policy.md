@@ -13,12 +13,12 @@ formal proposal. a learned mining policy for [[seer]]: a Generative Flow Network
 
 - the policy lives on the neuron's side, outside the [[focusing]] contraction. it never computes $\phi^*$ and never changes how tru does.
 - the reward is the mint. the policy samples in proportion to the neuron's expected settlement under [[rewards]] net of cost. no second score for tru to honor.
-- no new particles. the action space is pairs of existing particles and conviction on existing axons.
+- no new files. the action space is pairs of existing files and conviction on existing axons.
 - public aggregates only ([interface](../specs/interface.md), invariant 4).
 
 ## 1. the problem
 
-a [[neuron]] mining the mint faces a combinatorial search: which [[particles]] to connect, with what conviction, to earn the most from a finite budget of will. densification searches this space analytically and deterministically. the question is whether a learned model can do better — propose a distribution over good edits in proportion to their value, rather than the single best one — and keep improving from what actually settled.
+a [[neuron]] mining the mint faces a combinatorial search: which [[files]] to connect, with what conviction, to earn the most from a finite budget of will. densification searches this space analytically and deterministically. the question is whether a learned model can do better — propose a distribution over good edits in proportion to their value, rather than the single best one — and keep improving from what actually settled.
 
 ## 2. why GFlowNets
 

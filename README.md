@@ -12,7 +12,7 @@ seer is a miner. it finds the [[cyberlink]] worth making next and hands it to th
 
 ## the problem
 
-the [[cybergraph]] is shared. among its existing [[particles]] there are $O(N^2)$ pairs that could be linked. a [[neuron]] has a budget of will and one question: which link, right now, teaches the graph the most for what it costs?
+the [[cybergraph]] is shared. among its existing [[files]] there are $O(N^2)$ pairs that could be linked. a [[neuron]] has a budget of will and one question: which link, right now, teaches the graph the most for what it costs?
 
 [[tru]] answers that question exactly, before a token is spent. every candidate link has a price: surprise $\rho$ times proven focus shift $\Delta\phi^+$, net of cost ([[rewards]] §6). seer searches the pairs against that price.
 
@@ -46,11 +46,11 @@ seer mines the mint. a different miner grinds nonces for the subsidy. two miners
 
 the price is tru's, not $CYB's. any home book that settles in proven focus shift can be mined the same way. and there are many books: [[cyber/research/oikos|oikos]] gives every token its own — one token, one chain — and any neuron with a token can root one. $CYB is the reference, not the only chain. seer mines whichever chain the neuron is signing into.
 
-## never a new particle
+## never a new file
 
-the price exists only for pairs of particles that already exist. a new particle's value is the entropy of content nobody has written; it exists after the particle is made, not before. nothing prices it in advance.
+the price exists only for pairs of files that already exist. a new file's value is the entropy of content nobody has written; it exists after the file is made, not before. nothing prices it in advance.
 
-that is the boundary of the method, not a policy. mining is exact because its space is bounded and every answer is priced ahead. creation is synthesis in an unbounded space, and its risks — hallucination, redundancy, storage paid before worth is known — are the risks of an unpriced search. humans, models, and agents create particles. seer wires them in. see [docs/link-production.md](docs/link-production.md).
+that is the boundary of the method, not a policy. mining is exact because its space is bounded and every answer is priced ahead. creation is synthesis in an unbounded space, and its risks — hallucination, redundancy, storage paid before worth is known — are the risks of an unpriced search. humans, models, and agents create files. seer wires them in. see [docs/link-production.md](docs/link-production.md).
 
 ## when it stops
 
@@ -59,7 +59,7 @@ a pair is worth mining iff $\rho \cdot \Delta\phi^+$ exceeds its cost. when no p
 consequences:
 
 - structural work runs out first. bridges raise $\lambda_2$ and spread focus; the mint pays for concentration. [densification](specs/densification.md)'s phases end in maintenance — bostrom's measured $\lambda_2 \approx 0.13$ was already there.
-- mining never stops globally. every new particle arrives unwired; [[temporal decay]] reopens pairs. mining is the digestion of creation — mined out per region, per epoch, until something new arrives.
+- mining never stops globally. every new file arrives unwired; [[temporal decay]] reopens pairs. mining is the digestion of creation — mined out per region, per epoch, until something new arrives.
 - a learned policy trained on realized settlement learns to leave mined-out regions alone on its own.
 
 open:
@@ -71,7 +71,7 @@ open:
 
 1. outside the contraction — seer never computes $\phi^*$ and never touches [[focusing]]. tru stays bit-identical on every machine.
 2. the mint is the objective — rank or sample by expected settlement net of cost. structural signals are priors, never the quantity optimized.
-3. no new particles — edges between particles that exist.
+3. no new files — edges between files that exist.
 4. honesty as a feature — every proposal carries a predicted settlement; every settled epoch scores it against what tru measured. a policy that mispredicts loses trust before it loses stake.
 
 ## methods

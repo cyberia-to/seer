@@ -11,7 +11,7 @@ the contract between [[seer]], [[tru]], the [[cybergraph]], and the [[neuron]] t
 
 ## scope
 
-seer mines existing→existing, on any chain. a chain here is a home book ([[cyber/research/oikos|oikos]]) whose settlement pays for proven focus shift under the [[tru]] measure; $CYB's is the reference and this page reads its rules from [[rewards]], but nothing below is specific to it — a neuron mining its own book substitutes that book's streams. seer proposes edges between [[particles]] that are already in the graph and never creates a particle. the value of every candidate is computable before commitment from public state ([[rewards]] §6); the value of a new particle is not — it exists only once the particle is wired in. that asymmetry is the boundary, and it is why a content-blind miner can be exact at its job. see [docs/link-production.md](../docs/link-production.md).
+seer mines existing→existing, on any chain. a chain here is a home book ([[cyber/research/oikos|oikos]]) whose settlement pays for proven focus shift under the [[tru]] measure; $CYB's is the reference and this page reads its rules from [[rewards]], but nothing below is specific to it — a neuron mining its own book substitutes that book's streams. seer proposes edges between [[files]] that are already in the graph and never creates a file. the value of every candidate is computable before commitment from public state ([[rewards]] §6); the value of a new file is not — it exists only once the file is wired in. that asymmetry is the boundary, and it is why a content-blind miner can be exact at its job. see [docs/link-production.md](../docs/link-production.md).
 
 ## inputs
 
@@ -62,13 +62,13 @@ the neuron decides. seer proposes; the owner signs through [[cyb/parts/ward|ward
 
 ## when the loop idles
 
-a candidate is worth mining iff $\hat{s} > c$. when no pair in the neuron's reach clears that, seer emits an empty proposal and the report says so. this is the stop condition — built into the reward, not a threshold seer sets. structural work ends first (bridges spread focus; the mint pays for concentration), semantic work last, and a created particle or a decayed link reopens the region. the open questions — whether the mint's stop matches the network's need, and whether miners plus focus have a fixed point — are stated on the [README](../README.md); seer's contribution to them is to report both numbers honestly.
+a candidate is worth mining iff $\hat{s} > c$. when no pair in the neuron's reach clears that, seer emits an empty proposal and the report says so. this is the stop condition — built into the reward, not a threshold seer sets. structural work ends first (bridges spread focus; the mint pays for concentration), semantic work last, and a created file or a decayed link reopens the region. the open questions — whether the mint's stop matches the network's need, and whether miners plus focus have a fixed point — are stated on the [README](../README.md); seer's contribution to them is to report both numbers honestly.
 
 ## invariants
 
 1. outside the contraction. seer never computes $\phi^*$, never participates in [[focusing]], never proposes a change to the iteration. tru's determinism is what [[zheng]] proves.
 2. the mint is the objective. a method ranks or samples by expected settlement under [[rewards]] net of cost. structural signals shape the search; they are never the quantity optimized. the protocol pays for directed syntropy that is valid and surprising, and a copy of an obvious link scores zero however large its $\Delta\lambda_2$.
-3. no new particles.
+3. no new files.
 4. public aggregates only. individual cyberlinks are private to their neurons; $\phi^*$, axon weights, and spectral positions are public. seer reads the public side and its own neuron's ego-net, never another neuron's. a learned policy therefore optimizes publicly visible focus flow, which is the right objective.
 5. proposal, then commitment. a method may be cheap and wrong; the neuron pays only when it signs. the prediction is scored against the realized settlement, and a policy that mispredicts loses the neuron's trust before it loses the neuron's stake.
 6. provable when it matters. a proposal produced by a [[nox]] program carries a [[zheng]] trace: this policy, on this public state, produced these candidates. that proves the process; settlement proves the quality.
