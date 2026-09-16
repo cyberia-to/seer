@@ -1,6 +1,6 @@
 # seer — agent instructions
 
-seer is a miner. its chain is cyber; it mines the mint stream of tru/specs/rewards.md by finding the cyberlinks that shift focus most per unit of will and handing them to the neuron to sign. read README.md first. four invariants are the whole boundary:
+seer is a miner. it mines the mint of any chain that pays for focus — every token has its own home book (cyber/research/oikos.md: one token, one chain), $CYB's is the reference — by finding the cyberlinks that shift focus most per unit of will and handing them to the neuron to sign. read README.md first. four invariants are the whole boundary:
 
 1. nothing in this repo computes φ* or touches tru's focusing iteration. learning lives outside the contraction.
 2. the objective is the neuron's expected settlement under rewards.md, net of cost. structural signals (Δλ₂, articulation points) are priors, never the reward.
