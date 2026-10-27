@@ -1,4 +1,6 @@
-# seer — agent instructions
+# AGENTS.md — seer
+
+> the doctrine of the home is `~/cyber/AGENTS.md`; it applies here first. Claude Code receives both files at session start through `~/.config/cyber/agents-md.nu`; other agents read them in order.
 
 seer is a miner. it mines the mint of any chain that pays for focus — every token has its own home book (cyber/research/oikos.md: one token, one chain), $CYB's is the reference — by finding the cyberlinks that shift focus most per unit of will and handing them to the neuron to sign. read README.md first. four invariants are the whole boundary:
 
